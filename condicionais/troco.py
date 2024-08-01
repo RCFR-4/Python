@@ -5,4 +5,7 @@ dinheiro = float(input("dinheiro recebido: "))
 total = preco * quant
 troco = dinheiro - total
 
-print(f"troco: {troco:.2f}")
+if total > dinheiro:
+    print("dinheiro insuficiente!")
+else:
+    print(f"troco: {troco:.2f}")
